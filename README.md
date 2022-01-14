@@ -33,3 +33,6 @@ function getName(){
 }
 
 console.log(ss); // here we will get Reference Error: ss is not defined.
+
+**Function Execution**:
+Can be understand with the help of execution context.
