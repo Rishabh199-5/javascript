@@ -36,3 +36,13 @@ console.log(ss); // here we will get Reference Error: ss is not defined.
 
 **Function Execution**:
 Can be understand with the help of execution context.
+
+**Global Space**
+
+var a = 10;
+function b(){
+    var x = 10;
+}
+// a and b will be attached to global space but x is not.
+// anything inside funcion is not attached to global space.
+
