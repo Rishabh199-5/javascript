@@ -36,3 +36,29 @@ console.log(ss); // here we will get Reference Error: ss is not defined.
 
 **Function Execution**:
 Can be understand with the help of execution context.
+
+**Global Space**
+
+var a = 10;
+function b(){
+    var x = 10;
+}
+// a and b will be attached to global space but x is not.
+// anything inside funcion is not attached to global space.
+
+**Lexical Environment & scope chain**
+Lexical environment = local memory + parent lexical environment.
+function a (){
+    var b = 10;
+    c()
+    function c(){
+        console.log(b);
+    }
+}
+a();
+<img width="670" alt="Screenshot 2022-01-18 at 10 09 06 PM" src="https://user-images.githubusercontent.com/16613350/149979652-21be8476-99dd-44ff-ad80-9c2abf7d1e32.png">
+
+if a avariable is not found in local memory
+then javascript go recursively in the parents memeory till the variable is found.
+the above mentioned process is known as scope chain.
+
