@@ -48,6 +48,7 @@ function b(){
 
 **Lexical Environment & scope chain**
 Lexical environment = local memory + parent lexical environment.
+
 function a (){
     var b = 10;
     c()
@@ -56,9 +57,11 @@ function a (){
     }
 }
 a();
+
+
 <img width="670" alt="Screenshot 2022-01-18 at 10 09 06 PM" src="https://user-images.githubusercontent.com/16613350/149979652-21be8476-99dd-44ff-ad80-9c2abf7d1e32.png">
 
 if a avariable is not found in local memory
-then javascript go recursively in the parents memeory till the variable is found.
+then javascript go recursively in the parents memory till the variable is found.
 the above mentioned process is known as scope chain.
 
