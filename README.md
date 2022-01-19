@@ -65,3 +65,17 @@ if a avariable is not found in local memory
 then javascript go recursively in the parents memory till the variable is found.
 the above mentioned process is known as scope chain.
 
+
+**let, const declaration**:
+let and const variables are assigned undefined before declaration but in a seperate memory space.
+in case of var they are assigned undefined in global memory space.
+
+**temporal dead zone**:
+it is the phase when let and const variables are hoisted till they are initialized
+
+// console.log(a); //ReferenceError: cannot access 'a' before initialization
+//console.log(b);// undefined
+let a = 10;
+var b = 100;
+
+when variables are accessed inside temporal dead zone then they are not accessible until not initialized.
