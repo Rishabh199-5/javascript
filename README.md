@@ -1,4 +1,4 @@
-# javascript Notes
+# javascript notes ❤️
 
 var n = 2;
 
