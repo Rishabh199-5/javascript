@@ -65,6 +65,7 @@ if a avariable is not found in local memory
 then javascript go recursively in the parents memory till the variable is found.
 the above mentioned process is known as scope chain.
 
+**Remember : let and const are hoisted.**
 
 **let, const declaration**:
 let and const variables are assigned undefined before declaration but in a seperate memory space.
