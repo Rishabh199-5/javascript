@@ -79,3 +79,9 @@ let a = 10;
 var b = 100;
 
 when variables are accessed inside temporal dead zone then they are not accessible until not initialized.
+var variables can be accessed by window but let cannot.
+
+**Syntax vs TypeError vs Reference**
+Syntax - conts b;// Syntax error because initializer is missing.
+TypeError- cont b; b = 500; // TypeError:Assignment to constant variable because it is of const type
+Reference Error- console.log(a); let a=20;// Reference Error because a is in the special memory
