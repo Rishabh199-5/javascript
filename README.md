@@ -86,3 +86,45 @@ var variables can be accessed by window but let cannot.
 Syntax - conts b;// Syntax error because initializer is missing.
 TypeError- cont b; b = 500; // TypeError:Assignment to constant variable because it is of const type
 Reference Error- console.log(a); let a=20;// Reference Error because a is in the special memory
+
+**Block Scope**
+{
+    var a = 10; // a will be assigned and hoisted in global space
+    let b = 20; // b and c will be assigned and hoisted in special memory
+    const c = 30;
+}
+
+after exceution this block will be deleted from memory.
+
+**Shadowing**
+
+let  b = 100;
+{
+    var a = 10;
+    let b = 20; // b is shadowed
+    const c = 30;
+    console.log(a);
+    console.log(b); // 20
+    console.log(c);
+}
+console.log(b); // 100
+
+**Illegal Shadowing**
+let a = 20;
+{
+    var a = 100; // variable a is already declared.
+}
+
+**valid case** : variable must not cross bounday while shadowing
+
+let a = 20;
+{
+    let a = 100; .
+}
+
+**valid case**
+
+var a = 20;
+{
+    let a = 100; .
+}
