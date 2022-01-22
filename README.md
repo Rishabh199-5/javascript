@@ -128,3 +128,6 @@ var a = 20;
 {
     let a = 100; .
 }
+
+**closures**
+function along with its lexical scope bundled togather forms a closure.
