@@ -131,3 +131,12 @@ var a = 20;
 
 **closures**
 function along with its lexical scope bundled togather forms a closure.
+
+**JRE**
+Every browser has JRE(javascript runtime environment).
+JRE consist of js engine,api,event loop,callback queue and microtask queue.
+**Code => parsing(tokens) => AST => compilation => execution**
+compiler optimizes the code by talking to interpreter.
+javascript can behave interpreted or compiled language.
+It depends on engine.
+JIT uses both interpreter and compiler.
