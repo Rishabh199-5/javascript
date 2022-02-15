@@ -141,6 +141,10 @@ javascript can behave interpreted or compiled language.
 It depends on engine.
 JIT uses both interpreter and compiler.
 
-**Higher Order Function **
+**Higher Order Function**
 
 A function that takes another function as argument or that returns another function.
+
+**async vs defer**
+async - doesn't guarantee order of execution of scripts.
+defer -  guarantee order of execution of scripts.
