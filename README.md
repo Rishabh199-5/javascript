@@ -148,3 +148,12 @@ A function that takes another function as argument or that returns another funct
 **async vs defer**
 async - doesn't guarantee order of execution of scripts.
 defer -  guarantee order of execution of scripts.
+
+**Event Delegation**
+benefits
+memory saver - most important
+we can write less code
+
+limitation
+all the events are not bubbled up some events like blur ,focus etc which are not bubbled up in heiarchy.
+will not work with stopPropagation
